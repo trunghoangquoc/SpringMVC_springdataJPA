@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+
+	<!-- apply web template -->
+	<decorator name="trang-chu" page="web.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+
+
+	<!-- apply giao dien admin template -->
+
+	<decorator name="home" page="admin.jsp">
+		<pattern>/quan-tri*</pattern>
+	</decorator>
+
+	<!-- tạo 1 giao diện là login -->
+
+	<decorator name="login" page="login.jsp">
+		<pattern>/dang-nhap</pattern>
+	</decorator>
+
+</decorators>
